@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=_BqocHWl7Jg&index=11&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i
+
+Clase 11. Manifest.json
+---------------------------
+
+Indica cómo se va a ver la PWA en el móvil.
+	
+{
+	"name" : "My first PWA app",		- El nombre que saldrá en la aplicacion
+	"sort_name": "PWAfirst",			- El nombre del icono en la home screen del móvil
+	"start_url": "index.html",			- La url de comienzo de la app
+	"icons": {
+		"src": "img/icons/logo.png",	- Url del icono
+		"sizes": "128x128",				- Tamaño que ha de servir el icono (lo normal 256x256)
+		"type": "image/png"				- Tipo de la imagen del icono
+	},
+	"display": "standalone",			- Cómo se verá en el móvil. StandAlone: Pantalla completa
+	"background_color": "#FFCCFF",		- Color de fondo de la app
+	"theme_color": "orange"				- Color del tema que será coherente con la barra del móvil
+}
+
+	Hay muchas mas configuraciones. Para poder tener una referencia:
+		https://developer.mozilla.org/es/docs/Web/Manifest
