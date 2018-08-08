@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=xaAdQxMirdM&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i&index=10
+
+Clase 10. App Shell Architecture.
+----------------------------------
+
+Estrategia de Renderizado:
+	SSR (Server Side Render)
+		El servidor devuelve una pagina completa
+		La página carga todo el CSS, JS y el contenido
+		La página se actualiza recagando el DOM
+	CSR (Client Side Render)
+		El servidor devuelve un esqueleto HTML y carga el CSS y JS
+		JS pide el contenido (ajax, fetch), y lo carga en la página
+		La página se actualiza recargando solo el contenido dinámico
+Content First
+	Centrarse en el contenido, que es lo más importante
+	Reordenar, reposiciona, reemplaza...
+	Remover (borrar) --> Es muy pesado (lento) si se hace sobre el HTML original que
+		devuelve el servidor. Sobre el nuevo html creado con javascript es rápido.
+		Tener esto en cuenta para decidir qué va en la App-Shell (minimizar el borrado)
+Recomendaciones:
+	Uso de FlexBox de CSS
+	Uso de Grid de CSS
