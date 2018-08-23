@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>PWA First</title>
+
 	<meta charset="UTF-8">
-	<title>PWA Curso EdTeam</title>
-	<style>
-		h1{
-			text-align: center;
-			color: gray;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA_Compatible" content="ie=edge">
+
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
+
+	<!-- Para indicarle al navegador que debe intentar leer un archivo de manifiesto -->
+	<!-- Preferentemente debería estar en la raiz del servidor -->
+		<link rel="manifest" href="./manifest.json">
+
+	<!-- Para decirle al navegador cual será el color de tema principal. -->
+	<!-- En móvil suele adaptar la barra principal a este color -->
+		<meta name="theme-color" content="#e8403"> <!-- Orange Dark -->
+
+	<!-- Iconos de la App en varias versiones de tamaño -->
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/icons/icon_16x16.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/icons/icon_32x32.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="./img/icons/icon_64x64.png">
+		<link rel="icon" type="image/png" sizes="128x128" href="./img/icons/icon_128x128.png">
+		<link rel="icon" type="image/png" sizes="256x256" href="./img/icons/icon_256x256.png">
+
+	<!-- MetaTags para iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-title" content="PWA Demo">
+		<link rel="apple-touch-icon" sizes="256x256" href="./img/icons/icon_256x256.png">
+
+	<!-- MetaTags Windows -->
+		<meta name="msapplication-TileColor" content="#e8403"> <!-- Orange Dark -->
+		<meta name="msapplication-TileImage" content="./img/icon_256x256.png">
+
+	<!-- MetaTags OpenGraph para compartición en redes sociales -->
+		<meta property="og:title" content="PWA Demo">
+		<meta property="og:locale" content="es_MX">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="./img/icon_128x128.png">
+		<meta property="og:site_name" content="EDteam">
+		<meta property="og:url" content="https://pwa.ed.team">
+
+	<!-- Fuentes Iconos de Font Awesome -->
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-	<h1>Curso EdTeam</h1>
+	<header class="header">
+		<h1>My First Progressive Web App</h1>
+		<h2>Thanks to EdTeam</h2>
+	</header>
+	<main>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus tempore, assumenda eum voluptates ipsum vitae perferendis repudiandae iure libero aspernatur nulla, voluptatem incidunt consectetur quis tempora explicabo impedit veniam sunt?
+		</p>
+	</main>
+
+	<script src="./script.js"></script>
 </body>
 </html>
