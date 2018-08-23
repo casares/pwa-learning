@@ -1,0 +1,39 @@
+{
+	"name" : "My first PWA app",
+    "short_name": "PWAfirst",
+    "description": "First PWA based into EdTeamm Course",
+    "start_url": "./?utm=homescreen",
+    "lang": "es-ES",
+    "scope": "./",
+	"icons": [
+        {
+            "src": "img/icons/icon_16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon_32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon_64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/icon_128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },                                
+        {
+            "src": "img/icons/icon_256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "portrait",
+	"display": "standalone",
+	"background_color": "#FFCCFF",
+	"theme_color": "gray"
+}

@@ -1,0 +1,15 @@
+h1,h2{
+    text-align: center;
+}
+h2{
+    color: rgb(161, 161, 161);
+}
+.header{
+    background-color: gray;
+}
+.u-offline{
+    background-color: #F0CBCB;
+}
+main p{
+    padding: 2em;
+}

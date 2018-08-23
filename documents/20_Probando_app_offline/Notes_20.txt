@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=RZzbBeD2OCU&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i&index=20
+
+Clase 20. Probando Applicacion Offline
+---------------------------------------
+
+
+Para probar una aplicacion offline se puede realizar simulando la desconexion en el navegador
+Para ello se hace uso de DevTools > Aplication > Cache Storage > Offline (marcar)
+
+A la hora de probar a veces, para no acumular lo que hace anteriormente el Service Worker
+es mejor hacer un Unregister del SW en la misma sección de las DevTools

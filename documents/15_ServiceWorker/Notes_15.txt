@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=c6yz-Kf_hNk&index=15&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i
+
+Clase 15. Services Workers
+--------------------------
+
+Service Workers
+    Son secuencias de comandos (scripts) que se ejecutan en segundo plano
+    Permiten acceder a funcionalidades que no requieren interacción con el usuario
+        - Notificaciones PUSH
+        - Sincronización (almacenado información en cache,...)
+        - Experiencia de funcionamiento off line (Sigue respondiendo aún sin conexión a internet)
+    Necesita HTTPs para que funcione en servidor (tambien funciona con http sobre localhost para desarrollo)
+    Tiene un ciclo de vida ( ver imagen en esta carpeta)
+    Se registra en el objeto Navigator
+    Se comunica con la aplicación a través de mensajes
+    Hace funciones de Proxy
+    Se maneja con la API de Service Workers
+    
+
+

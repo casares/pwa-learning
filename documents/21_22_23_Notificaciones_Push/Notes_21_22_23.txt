@@ -1,0 +1,31 @@
+https://www.youtube.com/watch?v=4s6YPxaFP-M&index=21&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i
+
+Clase 21,22,23. Notificaciones Push
+-----------------------------------
+
+Se necesitan utilizar dos APIs de HTML5:
+    - PUSH API
+        Maneja el evento Push
+        Suscribe los servicios Push
+        Envia los mensajes Push
+    - NOTIFICATION API
+        Crea y configura Notificaciones
+        Maneja eventos de Notificaciones
+
+Para envíar una notificación se requiere el permiso del usuario
+    Notification.requestPermission((status)=>{})
+Esto llamará a la funcion que se le pasa con es estatus (si el usuario ha dado su permiso o no)
+    granted
+    denied
+Dentro de esta función, se pueden mandar las Notificaciones 
+    (status=>{
+        let notification = new Notification(<titulo>:sting, <options>:JS Object);
+    })
+A las notificaciones se les pueden poner acciones, a las que el usuario puede responder
+    Para llevarles a la app
+    Para llevarles a una url concreta
+    Para avisarles de algo
+    ...
+
+    
+

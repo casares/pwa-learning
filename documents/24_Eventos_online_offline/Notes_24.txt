@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=wRlnuGK-dr4&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i&index=24
+
+Clase 24: Eventos Online y Offline
+----------------------------------
+
+Se puede saber cuándo el cliente esta Offline
+    navigator.online
+Eventos del objeto window
+    online
+    ofline

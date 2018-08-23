@@ -1,0 +1,39 @@
+https://www.youtube.com/watch?v=nUzXzYQWFYo&index=16&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i
+https://www.youtube.com/watch?v=JZUiQUtLI9c&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i&index=17
+
+Clase 16 y 17. Registro de un Service Worker
+--------------------------------------------
+
+Se registra mediante -> navigator.register(urlDelServiceWorker)
+
+La estrategia para manjar un Service Worker se realiza a través de 3 eventos a los que el SW puede responder
+    - install
+        Como respuesta a este evento se crea la cache y se inician los activos
+    - activate
+        Para actualizar el cache
+    - fetch
+        Recuperar archvos del cache, la red, o cualquier otro recurso
+Funcionamiento del Service Worker
+    Para servir los archivos, el Service Worker, decide si tiene que ir a buscar los archivos
+    al servidor o lo tiene en cache.
+        Si el archivo está en cache, lo sirve
+            sino lo pide a la red (servidor)
+        Si el archivo en servidor es más actual
+            lo pide a la red, lo cachea
+        Si la cache no funciona, lo pide a la red
+    Por ejemplo: La prmera vez que se accede a la aplicación, al no haber nada en la cache, lo pide a la red
+
+El Service Worker, se referencia a sí mismo mediantea la palabra reservada:
+    self
+
+Las Chrome Development Tools - Aplication
+    Pueden simular situaciones para probar y desarrollar los Works Services
+        - offline : para simular que la aplicación está sin conexión
+        - bypass for network : para simular aún teniendo cache, que pida los recursos al servidor
+        - show all: muestra los Services Workers de todos los dominios que se han visitado
+            actualizado a: Services Workers from others domains
+        - update: simula el evento fetch
+        - push: permite lanzar las notificaciones
+        - sync: permite hacer tareas en segundo plano
+        - unregister: para destruir el Service Worker, deja de estar registrado
+

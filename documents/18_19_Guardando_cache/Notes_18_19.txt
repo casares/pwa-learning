@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=eddmYo0q_WE&index=18&list=PLtTGWoGMH2rN87GqdRbAwMShYShGP-46i
+
+Clase 18 y 19. Guardando en Cache
+-----------------------------
+
+Se pueden manejar varias caches, dandole un nombre distinto a cada una.
+Se debe tener un array con las url's de los archivos que se quieren cachear.
+
+Uso de la API Cache de Html5
+    https://developer.mozilla.org/en-US/docs/Web/API/Cache
